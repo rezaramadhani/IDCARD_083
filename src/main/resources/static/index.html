@@ -11,6 +11,26 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+<!--        <div class="tampilan">
+            <p>Nama Lengkap</p>
+            <p>Tanggal Lahir</p>
+            <p>Foto</p>
+            
+        </div>
+        <div>Sending text-date-image</div>-->
+        <!--<hr/>-->
+        <form action="/getData" method="POST" enctype="multipart/form-data">
+            <label for="namalengkap">Nama Lengkap <br></label><input type="text" name="namalengkap"><br>
+            <br><label for="tanggallahir">Tanggal Lahir <br></label><input type="date" name="tanggallahir"></br> 
+            <br><label for="foto">Foto<br></label><input type="file" name="foto"></br>
+            <br><label for="select">Jabatan<br></label><select name="jabatan" id="jabatan">
+            <option value="Manager">Manager</option>
+            <option value="Direktur">Direktur</option>
+            <option value="Karyawan">Karyawan</option>
+            <option value="Staff">Staff</option>
+            </select>
+            <br><input type="submit" value="send">
+            
+        </form>
     </body>
 </html>
